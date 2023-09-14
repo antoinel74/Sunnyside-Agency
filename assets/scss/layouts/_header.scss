@@ -12,7 +12,10 @@
   .headerimg_text {
     color: white;
     .headerimg_title {
-      padding: 12px 0px;
+      padding: 48px 0px;
+    }
+    &.headerimg_arrow {
+      margin-top: 50px;
     }
   }
 }
