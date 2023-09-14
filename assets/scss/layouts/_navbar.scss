@@ -25,28 +25,28 @@
   .nav_link {
     transition: 0.5s ease;
     &:hover {
-      color: yellow;
+      color: $yellow;
     }
     &.nav_btn {
       background: white;
       padding: 10px 24px;
       border-radius: 20px;
-      color: black;
+      color: $desablue;
       font-family: "Fraunces", serif;
       animation: 0.2s ease-in;
     }
     &.nav_btn:hover {
-      background: rgba(255, 255, 255, 0.46);
+      background: $blue;
     }
   }
   a {
-    color: white;
+    color: $white;
     text-decoration: none;
     cursor: pointer;
   }
   a:visited {
     text-decoration: none;
-    color: white;
+    color: $white;
   }
 }
 
@@ -60,7 +60,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: $white;
   }
 }
 
@@ -79,13 +79,13 @@
   }
   .navbar {
     a {
-      color: rgba(0, 0, 0, 0.547);
+      color: $desablue;
       text-decoration: none;
       cursor: pointer;
     }
     a:visited {
       text-decoration: none;
-      color: rgba(0, 0, 0, 0.547);
+      color: $desablue;
     }
   }
   .nav_menu {
@@ -95,7 +95,7 @@
     top: 80px;
     gap: 0;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: $white;
     width: 100%;
     text-align: center;
     transition: 0.4s;
@@ -108,7 +108,7 @@
   .nav_menu.active {
     left: 0;
     .nav_btn {
-      background-color: hsl(51, 100%, 49%);
+      background-color: $yellow;
     }
   }
 }

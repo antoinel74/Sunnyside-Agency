@@ -152,27 +152,27 @@ body {
   transition: 0.5s ease;
 }
 .navbar .nav_link:hover {
-  color: yellow;
+  color: hsl(51, 100%, 49%);
 }
 .navbar .nav_link.nav_btn {
   background: white;
   padding: 10px 24px;
   border-radius: 20px;
-  color: black;
+  color: hsl(212, 27%, 19%);
   font-family: "Fraunces", serif;
   animation: 0.2s ease-in;
 }
 .navbar .nav_link.nav_btn:hover {
-  background: rgba(255, 255, 255, 0.46);
+  background: hsl(210, 4%, 67%);
 }
 .navbar a {
-  color: white;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
   cursor: pointer;
 }
 .navbar a:visited {
   text-decoration: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 
 .hamburger {
@@ -185,7 +185,7 @@ body {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
 }
 
 @media (max-width: 768px) {
@@ -202,13 +202,13 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
   .navbar a {
-    color: rgba(0, 0, 0, 0.547);
+    color: hsl(212, 27%, 19%);
     text-decoration: none;
     cursor: pointer;
   }
   .navbar a:visited {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.547);
+    color: hsl(212, 27%, 19%);
   }
   .nav_menu {
     position: fixed;
@@ -217,7 +217,7 @@ body {
     top: 80px;
     gap: 0;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 100%);
     width: 100%;
     text-align: center;
     transition: 0.4s;
@@ -242,13 +242,12 @@ body {
   flex-direction: column;
   overflow: hidden;
   text-align: center;
-  border: 1px solid red;
   background-size: cover;
   background-position: center;
   background-image: url("../../assets/images/photos/image-header.jpg");
 }
 .headerimg .headerimg_text {
-  color: white;
+  color: hsl(0, 0%, 100%);
 }
 .headerimg .headerimg_text .headerimg_title {
   padding: 48px 0px;
