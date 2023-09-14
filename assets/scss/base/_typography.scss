@@ -49,3 +49,35 @@ body {
     text-align: left;
   }
 }
+
+.testimony {
+  .testimony_title {
+    text-align: center;
+    font-family: $special;
+    font-weight: $ultrabold;
+    color: $blue;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 81px;
+  }
+
+  .testimony_details {
+    font-weight: $bold;
+    color: $grayblue;
+    font-family: $text;
+    padding-bottom: 69px;
+    line-height: 32px;
+  }
+  .name {
+    font-family: $special;
+    font-weight: $ultrabold;
+    font-size: 18px;
+    color: $desablue;
+    padding-bottom: 9px;
+  }
+  .job {
+    font-weight: $bold;
+    color: $blue;
+  }
+}

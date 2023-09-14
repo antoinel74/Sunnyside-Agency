@@ -1,0 +1,8 @@
+.testimony_container {
+  @include flexCenter;
+}
+@media (max-width: 768px) {
+  .testimony_container {
+    flex-direction: column;
+  }
+}

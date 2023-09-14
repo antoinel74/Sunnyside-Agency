@@ -160,6 +160,35 @@ body a:visited {
     text-align: left;
   }
 }
+.testimony .testimony_title {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(210, 4%, 67%);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 81px;
+}
+.testimony .testimony_details {
+  font-weight: 600;
+  color: hsl(213, 9%, 39%);
+  font-family: "Barlow", sans-serif;
+  padding-bottom: 69px;
+  line-height: 32px;
+}
+.testimony .name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: hsl(212, 27%, 19%);
+  padding-bottom: 9px;
+}
+.testimony .job {
+  font-weight: 600;
+  color: hsl(210, 4%, 67%);
+}
+
 .products_link {
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -185,6 +214,25 @@ body a:visited {
     padding: 0 48px;
   }
 }
+.testimony_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: solid 1px red;
+}
+.testimony_box figure {
+  display: flex;
+}
+.testimony_box figure img {
+  width: 72px;
+  height: auto;
+  border-radius: 50%;
+}
+.testimony_box .testimony_details {
+  margin-top: 58px;
+}
+
 .navbar {
   min-height: 50px;
   width: 100%;
@@ -423,5 +471,16 @@ body a:visited {
   .services .services_details {
     padding: 24px 24px 0px 24px;
     line-height: 27px;
+  }
+}
+.testimony_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .testimony_container {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
