@@ -1,0 +1,18 @@
+.headerimg {
+  width: 100%;
+  min-height: 60vh;
+  @include flexCenter;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid red;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../assets/images/photos/image-header.jpg");
+  .headerimg_text {
+    color: white;
+    .headerimg_title {
+      padding: 12px 0px;
+    }
+  }
+}
