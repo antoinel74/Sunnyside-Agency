@@ -110,6 +110,13 @@ input {
 
 body {
   font-size: 18px;
+  font-family: "Barlow", sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+body a:visited {
+  text-decoration: none;
 }
 
 .navbar {
@@ -125,6 +132,52 @@ body {
   text-transform: uppercase;
 }
 
+.products_title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.4em;
+  text-align: center;
+  color: hsl(212, 27%, 19%);
+  padding: 24px 48px;
+}
+
+.services_title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.4em;
+  color: hsl(167, 40%, 24%);
+}
+
+@media (min-width: 768px) {
+  .products_title {
+    text-align: left;
+  }
+}
+.products_link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 24px 0px;
+}
+.products_link:after {
+  content: "";
+  float: left;
+  background: hsl(51, 100%, 49%);
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+}
+.products_link:hover {
+  font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .products_link {
+    padding: 0 48px;
+  }
+}
 .navbar {
   min-height: 50px;
   width: 100%;
@@ -145,7 +198,7 @@ body {
   gap: 50px;
 }
 .navbar .logo img {
-  width: 170px;
+  width: 160px;
   height: auto;
 }
 .navbar .nav_link {
@@ -156,11 +209,12 @@ body {
 }
 .navbar .nav_link.nav_btn {
   background: white;
-  padding: 10px 24px;
+  padding: 8px 16px;
   border-radius: 20px;
   color: hsl(212, 27%, 19%);
   font-family: "Fraunces", serif;
   animation: 0.2s ease-in;
+  font-size: 1em;
 }
 .navbar .nav_link.nav_btn:hover {
   background: hsl(210, 4%, 67%);
@@ -202,13 +256,13 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
   .navbar a {
-    color: hsl(212, 27%, 19%);
+    color: hsl(232, 10%, 55%);
     text-decoration: none;
     cursor: pointer;
   }
   .navbar a:visited {
     text-decoration: none;
-    color: hsl(212, 27%, 19%);
+    color: hsl(232, 10%, 55%);
   }
   .nav_menu {
     position: fixed;
@@ -221,16 +275,14 @@ body {
     width: 100%;
     text-align: center;
     transition: 0.4s;
-    padding: 24px 0px;
-  }
-  .nav_item {
-    margin: 16px 0;
+    padding: 64px 0px;
   }
   .nav_menu.active {
     left: 0;
   }
   .nav_menu.active .nav_btn {
     background-color: hsl(51, 100%, 49%);
+    padding: 8px 16px;
   }
 }
 .headerimg {
@@ -254,4 +306,72 @@ body {
 }
 .headerimg .headerimg_text.headerimg_arrow {
   margin-top: 50px;
+}
+
+.products {
+  width: 100%;
+}
+
+.products_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.products_container .products_text {
+  width: 100%;
+  height: auto;
+}
+.products_container .products_text .products_details {
+  padding: 8px 48px;
+  color: hsl(232, 10%, 55%);
+  font-weight: 600;
+  line-height: 30px;
+}
+.products_container .products_img {
+  width: 100%;
+  height: auto;
+}
+.products_container .products_img figure img {
+  width: 100%;
+  max-height: 50%;
+}
+.products_container.row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 868px) {
+  .products_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .products_container.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .products_container .products_text {
+    width: 95%;
+    max-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 64px 0px;
+    text-align: center;
+  }
+  .products_container .products_text .products_details {
+    padding: 8px 8px;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: hsl(232, 10%, 55%);
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@
   }
   .logo {
     img {
-      width: 170px;
+      width: 160px;
       height: auto;
     }
   }
@@ -29,11 +29,12 @@
     }
     &.nav_btn {
       background: white;
-      padding: 10px 24px;
+      padding: 8px 16px;
       border-radius: 20px;
       color: $desablue;
       font-family: "Fraunces", serif;
       animation: 0.2s ease-in;
+      font-size: 1em;
     }
     &.nav_btn:hover {
       background: $blue;
@@ -79,13 +80,13 @@
   }
   .navbar {
     a {
-      color: $desablue;
+      color: $darkgrayblue;
       text-decoration: none;
       cursor: pointer;
     }
     a:visited {
       text-decoration: none;
-      color: $desablue;
+      color: $darkgrayblue;
     }
   }
   .nav_menu {
@@ -99,16 +100,13 @@
     width: 100%;
     text-align: center;
     transition: 0.4s;
-    padding: 24px 0px;
-  }
-
-  .nav_item {
-    margin: 16px 0;
+    padding: 64px 0px;
   }
   .nav_menu.active {
     left: 0;
     .nav_btn {
       background-color: $yellow;
+      padding: 8px 16px;
     }
   }
 }

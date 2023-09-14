@@ -1,16 +1,45 @@
 body {
   font-size: 18px;
+  font-family: $text;
+  a {
+    text-decoration: none;
+    &:visited {
+      text-decoration: none;
+    }
+  }
 }
 
 .navbar {
-  font-family: "Barlow", sans-serif;
+  font-family: $text;
   font-weight: 600;
   font-size: 1rem;
 }
 
 .headerimg {
-  font-family: "Fraunces", serif;
-  font-weight: 900;
+  font-family: $special;
+  font-weight: $ultrabold;
   font-size: 2em;
   text-transform: uppercase;
+}
+
+.products_title {
+  font-family: $special;
+  font-weight: $ultrabold;
+  font-size: 1.4em;
+  text-align: center;
+  color: $desablue;
+  padding: 24px 48px;
+}
+
+.services_title {
+  font-family: $special;
+  font-weight: $ultrabold;
+  font-size: 1.4em;
+  color: $darkcyan;
+}
+
+@media (min-width: 768px) {
+  .products_title {
+    text-align: left;
+  }
 }

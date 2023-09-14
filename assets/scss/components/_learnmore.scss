@@ -1,0 +1,24 @@
+.products_link {
+  font-family: $special;
+  font-weight: $ultrabold;
+  color: $desablue;
+  width: fit-content;
+  margin: 24px 0px;
+  &:after {
+    content: "";
+    float: left;
+    background: $yellow;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+  }
+  &:hover {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .products_link {
+    padding: 0 48px;
+  }
+}
