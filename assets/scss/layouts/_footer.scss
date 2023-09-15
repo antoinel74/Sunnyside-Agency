@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  height: 350px;
+  background-color: $footer;
+  @include flexCenter;
+  flex-direction: column;
+  .footer_logo {
+    @include flexCenter;
+    margin: 40px 0px;
+  }
+  .footer_menu {
+    @include flexCenter;
+    font-weight: $bold;
+    gap: 56px;
+    color: $medcyan;
+    a:visited {
+      color: $medcyan;
+    }
+    a:hover {
+      color: $white;
+    }
+  }
+  .footer_social {
+    @include flexCenter;
+    margin: 54px 0px;
+    gap: 28px;
+  }
+  path:hover {
+    fill: white;
+  }
+}
