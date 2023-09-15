@@ -17,6 +17,12 @@
   }
 }
 
+.linkred {
+  &:after {
+    background: $softred;
+  }
+}
+
 @media (min-width: 768px) {
   .products_link {
     padding: 0 48px;
