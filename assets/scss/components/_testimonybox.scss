@@ -1,7 +1,8 @@
 .testimony_box {
   @include flexCenter;
   flex-direction: column;
-  border: solid 1px red;
+  margin: 36px;
+  text-align: center;
   figure {
     display: flex;
     img {
@@ -12,5 +13,11 @@
   }
   .testimony_details {
     margin-top: 58px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimony_box {
+    margin: 24px;
   }
 }

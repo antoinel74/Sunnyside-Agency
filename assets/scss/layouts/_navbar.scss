@@ -8,7 +8,6 @@
   align-items: center;
   padding: 24px 24px;
   position: fixed;
-  background-color: transparent;
   z-index: 199;
   .nav_menu {
     display: flex;
@@ -25,19 +24,22 @@
   .nav_link {
     transition: 0.5s ease;
     &:hover {
-      color: $yellow;
+      background-color: $hoverbtn;
+      padding: 8px 16px;
+      border-radius: 20px;
     }
     &.nav_btn {
-      background: white;
+      background: $white;
       padding: 8px 16px;
       border-radius: 20px;
       color: $desablue;
-      font-family: "Fraunces", serif;
+      font-family: $special;
       animation: 0.2s ease-in;
-      font-size: 1em;
+      font-size: 0.8em;
     }
     &.nav_btn:hover {
-      background: $blue;
+      background: $hoverbtn;
+      color: $white;
     }
   }
   a {
@@ -107,6 +109,15 @@
     .nav_btn {
       background-color: $yellow;
       padding: 8px 16px;
+      color: $desablue;
+    }
+    .nav_btn:hover {
+      color: $desablue;
+      background-color: $yellow;
+      font-size: 110%;
+    }
+    .nav_link:hover {
+      color: $desablue;
     }
   }
 }
