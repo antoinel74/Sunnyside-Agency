@@ -211,7 +211,7 @@ body a:visited {
   border-radius: 3px;
 }
 .products_link:hover {
-  font-size: 1.2em;
+  transform: scale(110%);
 }
 
 .linkred:after {
