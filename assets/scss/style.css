@@ -578,6 +578,9 @@ body a:visited {
   gap: 56px;
   color: hsl(168, 34%, 41%);
 }
+.footer .footer_menu a {
+  color: hsl(168, 34%, 41%);
+}
 .footer .footer_menu a:visited {
   color: hsl(168, 34%, 41%);
 }

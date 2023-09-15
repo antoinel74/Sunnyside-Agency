@@ -13,6 +13,9 @@
     font-weight: $bold;
     gap: 56px;
     color: $medcyan;
+    a {
+      color: $medcyan;
+    }
     a:visited {
       color: $medcyan;
     }
