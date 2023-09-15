@@ -28,7 +28,9 @@
     margin: 54px 0px;
     gap: 28px;
   }
-  path:hover {
-    fill: white;
+  svg {
+    path:hover {
+      fill: white;
+    }
   }
 }

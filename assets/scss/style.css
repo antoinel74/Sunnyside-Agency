@@ -595,6 +595,6 @@ body a:visited {
   margin: 54px 0px;
   gap: 28px;
 }
-.footer path:hover {
+.footer svg path:hover {
   fill: white;
 }/*# sourceMappingURL=style.css.map */
