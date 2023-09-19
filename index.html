@@ -18,6 +18,7 @@
       sizes="32x32"
       href="assets/images/icons/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="assets/scss/base.css" />
     <link rel="stylesheet" href="assets/scss/style.css" />
     <title>Sunnyside Agency Landing Page</title>
   </head>
@@ -51,8 +52,8 @@
         </button>
       </nav>
     </header>
-    <main>
-      <section class="headerimg">
+    <main data-scroll-container>
+      <section class="headerimg" data-scroll-section>
         <div class="headerimg_text">
           <h1 class="headerimg_title">we are creatives</h1>
         </div>
@@ -74,7 +75,7 @@
         </div>
       </section>
 
-      <section class="products" id="products">
+      <section class="products" id="products" data-scroll-section>
         <div class="products_container">
           <div class="products_text">
             <h2 class="products_title">Transform your brand</h2>
@@ -109,7 +110,7 @@
         </div>
       </section>
 
-      <section class="services" id="services">
+      <section class="services" id="services" data-scroll-section>
         <div class="graphic">
           <h2 class="services_title">Graphic Design</h2>
           <p class="services_details">
@@ -127,7 +128,7 @@
         </div>
       </section>
 
-      <section class="testimony">
+      <section class="testimony" data-scroll-section>
         <h2 class="testimony_title">Client Testimonials</h2>
         <ul class="testimony_container">
           <li class="testimony_box">
@@ -166,7 +167,7 @@
         </ul>
       </section>
 
-      <div class="gallery" id="gallery">
+      <div class="gallery" id="gallery" data-scroll-section>
         <ul class="gallery_container">
           <li class="gallery_box">
             <figure>
@@ -203,7 +204,7 @@
         </ul>
       </div>
 
-      <footer class="footer" id="footer">
+      <footer class="footer" id="footer" data-scroll-section>
         <div class="footer_logo">
           <a href="#"
             ><svg width="124" height="24" xmlns="http://www.w3.org/2000/svg">
@@ -268,5 +269,6 @@
       </footer>
     </main>
     <script src="assets/scripts/navbar.js"></script>
+    <script type="module" src="assets/scripts/loco.js"></script>
   </body>
 </html>
