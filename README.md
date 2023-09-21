@@ -12,3 +12,7 @@
 
 ## &#9749; Final output :
 
+[Visit the page output](https://antoinel74.github.io/sunnyside-agency/)
+
+![lighthouse results](/assets/images/sunnyside_lighthouse.png)
+_Lighthouse results_
